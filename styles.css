@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    width: auto;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+header a {
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+section { 
+    width: 75%;
+    margin: auto;
+    display: flex;
+    
+}
+section h2{
+    
+}
+section .aboutmeDiv {
+    width: 60%;
+    text-align: center;
+}
+section img {
+    top: 20px;
+    width: 455px;
+    height: auto;
+    max-height: 300px
+    
+}
+.contactLink{
+    width: 150px
+}
+.links{
+    position: relative;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+    
+    
+}
+.links a{
+    padding: 70px;
+    margin:auto;
+}
+.links a img {
+    width: 300px%;
+    justify-content: center;
+    
+}
+.contactSection{
+    display: block;
+    text-align: center;
+}
