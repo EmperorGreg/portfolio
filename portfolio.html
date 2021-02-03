@@ -2,9 +2,20 @@
 <html>
     <head>
         <link href="styles.css" type="text/css" rel="stylesheet">
+        <script>
+            function darkMode() {
+                document.getElementById("lightanddark").style.display = "none";
+                document.body.style.backgroundColor="RGB(71, 70, 67)";
+                document.getElementById("divTitle").style.color="white";
+                document.getElementById("p1").style.color="white";
+                document.getElementById("p2").style.color="white";
+                document.getElementById("p3").style.color="white";
+            }
+            
+        </script>
     </head>
     <body>
-        <header>
+        <header class="head">
             <h1>George Causer</h1>
             <nav>
                 <a href="portfolio.html">About me</a>
@@ -14,12 +25,13 @@
         <br/><br/>
         <section>
             <div class="aboutmeDiv">
-                <h2>About me</h2>
-                <p>Hello! I'm George Causer and i'm a Computer Science graduate whose currently doing a course to further improve my skill and knowledge in the field of web development.</p>
-                <p>I finished my University Computer science degree July/August of 2020 and finished with a 2:1. This was the culmuation of many years of work after completing a GCSE and A-level IT degrees</p>
-                <p>During my free time, I like to go for walks with my Dog Lucie and play Video Games to relax and to have a laugh with people online</p>
+                <h2 id="divTitle">About me</h2>
+                <p id="p1">Hello! I'm George Causer and i'm a Computer Science graduate whose currently doing a course to further improve my skill and knowledge in the field of web development.</p>
+                <p id="p2">I finished my University Computer science degree July/August of 2020 and finished with a 2:1. This was the culmuation of many years of work after completing a GCSE and A-level IT degrees</p>
+                <p id="p3">During my free time, I like to go for walks with my Dog Lucie and play Video Games to relax and to have a laugh with people online</p>
             </div>
             <img class ="portrait" src="formalGeorge.png">
         </section>
+        <button type="button" onclick="darkMode()" id="lightanddark">Dark Mode</button>
     </body>
 </html>

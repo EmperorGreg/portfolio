@@ -2,9 +2,17 @@
 <html>
     <head>
         <link href="styles.css" type="text/css" rel="stylesheet">
+        <script>
+            function darkMode() {
+                document.getElementById("lightanddark").style.display = "none";
+                document.body.style.backgroundColor="RGB(71, 70, 67)";
+                document.getElementById("contactP").style.color="white";
+            }
+            
+        </script>
     </head>
     <body>
-        <header>
+        <header class="head">
             <h1>George Causer</h1>
             <nav>
                 <a href="portfolio.html">About me</a>
@@ -12,7 +20,7 @@
             </nav>
         </header>
         <section class="contactSection">
-            <p>If you would like to contact me you can find me via any of the following links:</p>
+            <p id="contactP">If you would like to contact me you can find me via any of the following links:</p>
         </section>
         <br/><br/>
         <div class="links">
@@ -21,5 +29,6 @@
                 <a href="https://twitter.com/Gurzon128"><img class="contactLink" src ="twitter.png"></a>
                 <a href="https://github.com/EmperorGreg"><img class="contactLink" src="gitHub.png"></a>
             </div>
+        <button type="button" onclick="darkMode()" id="lightanddark">Dark Mode</button>
     </body>
 </html>
